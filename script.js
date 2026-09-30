@@ -1,5 +1,5 @@
 // ===== YOUR SETTINGS (edit these) =====
-const OWNER_PASSWORD = "chickenjoymcnuggets";
+const OWNER_PASSWORD = "renebaterbonia";
 
 const CLOUD_NAME    = "yxgwgxes";               // Cloudinary > Settings > API Keys
 const UPLOAD_PRESET = "IanlamawistgPortfolio";  // the unsigned preset you created
