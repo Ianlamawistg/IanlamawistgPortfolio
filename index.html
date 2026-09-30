@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <a class="brand" href="index.html">Your Name</a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Intro with picture space -->
+    <section class="hero">
+      <div class="photo">
+        <img src="images/me.jpg" alt="My photo" onerror="this.remove()">
+      </div>
+      <div>
+        <h1>Ian Carl Guevarra</h1>
+        <p>BS Computer Science student at Cavite State University – Silang Campus. This is where I keep my examinations, quizzes, and activities.</p>
+      </div>
+    </section>
+
+    <!-- Only the owner sees anything here (see script.js) -->
+    <div id="owner-area"></div>
+
+    <!-- Files -->
+    <section>
+      <h2>Examinations</h2>
+      <div class="file-list" data-category="exams"></div>
+    </section>
+
+    <section>
+      <h2>Quizzes</h2>
+      <div class="file-list" data-category="quizzes"></div>
+    </section>
+
+    <section>
+      <h2>Activities</h2>
+      <div class="file-list" data-category="activities"></div>
+    </section>
+  </main>
+
+  <footer>
+    <div id="socials" class="socials"></div>
+    <p class="owner-link"><a href="index.html?owner">Owner</a></p>
+  </footer>
+
+  <!-- File viewer -->
+  <div id="viewer" class="viewer" hidden>
+    <div class="viewer-bar">
+      <span id="viewer-title"></span>
+      <a id="viewer-download" class="btn" target="_blank" rel="noopener">Open in new tab</a>
+      <button id="viewer-close" class="btn">Close</button>
+    </div>
+    <div id="viewer-body" class="viewer-body"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
